@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&family=Inter:wght@400;500&display=swap');
+
+/* ===== CSS RESET / BASE STYLES ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== ROOT VARIABLES ===== */
+:root {
+  --primary-color: #4f46e5;
+  --secondary-color: #22c55e;
+  --text-color: #272e36;
+  --bg-color: #f9fafb;
+  --border-radius: 8px;
+  --transition: all 0.2s ease;
+}
+
+/* ===== BODY ===== */
+body {
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 1000;
+  line-height: 1.25;
+  margin-bottom: 0.5em;
+  font-family: 'Quicksand', sans-serif;
+  font-size: var(--size);
+}
+
+div { 
+    font-size: var(--fontSize);
+}
+
+p, a {
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 1em;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  background: linear-gradient(to right, var(--secondary-color) 0%, var(--secondary-color) 100%);
+  background-size: 0% 2px;  
+  background-position: 0 100%; 
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--secondary-color);     
+  background-size: 100% 2px;      
+}
+
+button {
+  font: inherit;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: min(90%, 1200px);
+  margin: 0 auto;
+}
+
+.h {
+    height: var(--h);
+}
+
+.w {
+    width: var(--w);
+}
+.maxW {
+    max-width: var(--maxW);
+}
+.maxH {
+    max-height: var(--maxH);
+}
+
+.flex {
+    display: flex;
+    flex-direction: var(--dir);
+    align-items: var(--align);
+    justify-content: var(--justify);
+    gap: var(--gap, 0);
+}
+
+.grid-col {
+  display: grid;
+  grid-template-columns: var(--cols);
+} /* style="--cols: auto 1fr"; || style="--cols: repeat(3, 1fr); */
+
+.grid-row {
+  display: grid;
+  grid-template-rows: var(--rows);
+} /* style="--cols: auto 1fr" || style="--cols: repeat(3, 1fr); */

@@ -1,0 +1,101 @@
+
+export default function Home() {
+  const div = document.createElement('div');
+  div.innerHTML = `
+        <div class="flex" style=" padding: 50px; --dir: row; --gap: 25px; --justify: space-evenly; flex-wrap: wrap;">
+            <div class="maxW" style="--maxW: 600px; ">
+                <div class="" style="display: flex; column-gap: 5px; flex-wrap: wrap; text-wrap: nowrap;">
+                    <h1 style="--size: 30px;">HI! I am</h1>
+                    <h1 style="--size: 30px; color: var(--secondary-color);">
+                        Karem Braile Daluyen
+                    </h1>
+                    <h1 style="--size: 25px;">Software Developer</h1>
+                </div>
+                <p style="text-align: justify;">
+                    I am a software developer with experience building desktop and web applications. 
+                    I specialize in transforming complex work operations into seamless, efficient software solutions. 
+                    I have nearly one and a half years of hands-on experience developing web applications, 
+                    focusing on functionality, usability, and reliability. I earned my Bachelor’s degree in 
+                    Information Technology from Baguio College of Technology, where I developed a strong foundation 
+                    in software development and problem-solving.
+                </p>
+                <p>
+                    To learm more about me please click About Me button bellow.
+                </p>
+                <div class="w" style="--w: 100%">
+                    <a href="#/about">
+                        <button>
+                            <h1>About Me</h1>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="flex">
+                <img src="" alt="" class="w" 
+                    style="--w:320px"/>
+            </div>
+        </div>
+        <div style="margin-bottom: 100px;">
+            <h1 style="--size: 25px;">Personal things I do</h1>
+            <div class="flex w" style="--w: 100%; --dir: column; row-gap: 10px;">
+                <div class="flex w" style="--dir: row; border: 1px solid gray; border-radius: 10px; --w: 100%; padding: 10px;"> 
+                    <img src="/assets/UbuntuCoF.svg.png" alt="" style="width: 100px; object-fit: contain;"/> 
+                    <div style="margin-left: 20px;"> 
+                        <div style="display: flex; gap: 5px;">
+                            <h1 style="--size: 25px">Practice on Ubuntu server</h1> 
+                            <p>Updated: 02/02/2026</p>
+                        </div>
+                        <p>
+                            Happy to use this OS, I even successfully implemented this to work with AI models and deploying DEV and PROD project.
+                        </p> 
+                    </div> 
+                </div>
+                <div class="flex w" style="--dir: row; border: 1px solid gray; border-radius: 10px; --w: 100%; padding: 10px;"> 
+                    <img src="/assets/9c3ebd54-fb24-442c-8e06-b438fb99ffa3_hf-logo.avif" alt="" style="width: 100px; object-fit: contain;"/> 
+                    <div style="margin-left: 20px;"> 
+                        <div style="display: flex; gap: 5px;">
+                            <h1 style="--size: 25px">Hotel AI Assistant</h1> 
+                            <p>Updated: 02/02/2026</p>
+                        </div>
+                        <p>
+                            Hugging Face - this is where I get my AI models by the way, its open source.
+                        </p> 
+                        <p>
+                            I successfully develop an Q and A assistant using non-intruct 7-B model, I name it Marisol. The deployment sample will be the next future here in my portfolio.
+                        </p>
+                    </div> 
+                </div>
+                <div class="flex w" style="--dir: row; border: 1px solid gray; border-radius: 10px; --w: 100%; padding: 10px;"> 
+                    <img src="/assets/9c807700-9828-11ea-8a3b-47411956130e.png" alt="" style="width: 100px; object-fit: contain;"/> 
+                    <div style="margin-left: 20px;"> 
+                        <div style="display: flex; gap: 5px;">
+                            <h1 style="--size: 25px">Express Backend Template</h1> 
+                            <p>Updated: 05/02/2026</p>
+                        </div>
+                        <p>
+                            My best budy for backend, Express is where I create my REST api, enforced with CORS policies and passport to work around with Bearers and Cookies.
+                            It's also reliable in scaling for deployment front end created from React TS.
+                        </p>
+                    </div> 
+                </div>
+                <div class="flex w" style="--dir: row; border: 1px solid gray; border-radius: 10px; --w: 100%; padding: 10px;"> 
+                    <img src="/assets/Arduino_Logo.svg" alt="" style="width: 100px; object-fit: contain;"/> 
+                    <div style="margin-left: 20px;"> 
+                        <div style="display: flex; gap: 5px;">
+                            <h1 style="--size: 25px">Hobby Machines</h1> 
+                            <p>Updated: 05/02/2026</p>
+                        </div>
+                        <p>
+                            I use arduino ideas on my interest or things people request, developing device related with application development. GPS, tracking, BT control, etc. 
+                            I even successfully created a working device for fingerprint chamber (Project of Criminology students from University of Cordillera), 
+                            from adjustable working timer of boiling Cyanoacrylate (Mighty Band product) to trigering the exhaust. Wiring is really dificult to me because
+                            handling high voltage and implementing right electric flow using relays is realy a mess.
+                        </p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    `;
+
+  return div;
+}

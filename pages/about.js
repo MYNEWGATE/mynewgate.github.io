@@ -1,0 +1,47 @@
+
+export default function About() {
+  const div = document.createElement('div');
+   div.innerHTML = `
+    <div class="maxW" style="margin-top: 50px; --maxW: 900px;">
+        <h1 style="--size: 25px;">Hellow, I am Karem Braile</h1>
+        <p>
+            I am Software Developer based on Baguio City, Benguet Philippines , I do both desktop application and web application also mobile app. 
+            I create solutions align to client's limitless suggestions and revisions to their application they wanted. I have more 
+            practices on web development because with my past experience from 456 hours of OJT in government plus 
+            2 years in hotel company. Well I do have idea on desktop development because I developed many school 
+            project related once and some are successfully launched to certain customer but eventually the apps are majority 
+            not used maybe because of credibility. Well who would accept or accredit a DTR system if the time entry is allowed 
+            to be customized anyway, but that was my past college days.
+        </p>
+        <p>
+            I do have earn and learn professional ethics on development as software developer in a famous hotel. But I don't majority work on
+            a group project. Because in the first job I have, one project always handle by single staff only, Its a working fullstack because 
+            not only you construct the documentation but also you construct the UI/UX. You do the backend and setup the database for data entry.
+            All task is yours, no dev-ops managing it, even quality assurance is yours, then many addons and endless revisions. Thats my exposure experience.
+        </p>
+        <p>
+            Well I don't have complaints why I choose this career to the things I work on because I know my reason why I want programming and that is 
+            creating solution to ideas and suggestions of the clients, because "Programmers makes users life easier" 
+            (This is quote from my teacher). Well I want actually in touch on technologies like robotics
+            but my purpose is more on creating apps to make operation seamless, faster, informative and productive.
+        </p>
+    </div>
+    <div style="margin-top: 50px;">
+        <h1 class="maxW" style="--size: 25px; --maxW: 900px">Sort of Frameworks, DNS, 
+            Language, etc. that I have ideas for working.</h1>
+        <div class="flex" style="--dir: columns; --gap: 10px; flex-wrap: wrap;">
+            <img src="/assets/146-1469373_cloudflare-logo-cloudflare-logo-svg.png" style="width: 100px; object-fit: contain;" alt="">
+            <img src="/assets/1_R6yycVi9tckn-0LibUBsZA.png" style="width: 100px; object-fit: contain;" alt="">
+            <img src="/assets/9c807700-9828-11ea-8a3b-47411956130e.png" style="width: 100px; object-fit: contain;" alt="">
+            <img src="/assets/Csharp_Logo.png" style="width: 100px; object-fit: contain;" alt="">
+            <img src="/assets/flutter-logo-png_seeklogo-349577.png" style="width: 100px; object-fit: contain;" alt="">
+            <img src="/assets/ISO_C++_Logo.svg.png" style="width: 50px; object-fit: contain;" alt="">
+            <img src="/assets/laravel8530.jpg" style="width: 100px; object-fit: contain;" alt="">
+            <img src="/assets/Node.js_logo.svg.png" style="width: 100px; object-fit: contain;" alt="">
+            <img src="/assets/png-transparent-nginx-hd-logo.png" style="width: 100px; object-fit: contain;" alt="">
+            <img src="/assets/Python-logo-notext.svg.png" style="width: 50px; object-fit: contain;" alt="">
+            <img src="/assets/react.png" style="width: 100px; object-fit: contain;" alt="">
+        </div>
+    </div>`;
+   return div;
+  }
