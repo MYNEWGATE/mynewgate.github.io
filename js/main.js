@@ -8,6 +8,7 @@ const routes = {
 };
 
 const routesDev = {
+  // '/': '../pages/htmlEntry/home.html',
   // '/about': '../pages/htmlEntry/about.html',
   '/contact': '../pages/htmlEntry/contact.html'
 };
