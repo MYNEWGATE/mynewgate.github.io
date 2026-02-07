@@ -18,7 +18,7 @@ const Project = () => {
             />
             <Card.Title mb="2">CLGRRC Website</Card.Title>
             <Card.Description>
-              This is an OJT group project lead by me, succesfully deploy using
+              This is an OJT group project which I am team lead, succesfully deploy using
               Laravel framework from 2024. Hoping the gov. IT team will still
               continue maintaining the page for information and transparent.
             </Card.Description>
