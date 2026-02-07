@@ -1,5 +1,6 @@
-import { Heading, Image, Link, Stack } from "@chakra-ui/react";
+import { Heading, Image, Stack } from "@chakra-ui/react";
 import { Button, Card } from "@chakra-ui/react";
+import { Link } from "react-router";
 
 const Project = () => {
   return (
@@ -13,7 +14,7 @@ const Project = () => {
             <Image
               objectFit={"cover"}
               alt="CLGRRC"
-              src="/src/assets/Screenshot 2026-02-07 204334.png"
+              src="Screenshot 2026-02-07 204334.png"
             />
             <Card.Title mb="2">CLGRRC Website</Card.Title>
             <Card.Description>
@@ -23,7 +24,7 @@ const Project = () => {
             </Card.Description>
           </Card.Body>
           <Card.Footer justifyContent="flex-end">
-            <Link href="https://clgrrc.car.dilg.gov.ph" target="_blank">
+            <Link to="https://clgrrc.car.dilg.gov.ph" target="_blank">
               <Button variant="outline" size={"sm"}>
                 View Page
               </Button>
@@ -35,7 +36,7 @@ const Project = () => {
             <Image
               objectFit={"cover"}
               alt="Capdevpro"
-              src="/src/assets/capdev.png"
+              src="capdev.png"
             />
             <Card.Title mb="2">E-Learning Capdevpro</Card.Title>
             <Card.Description>
@@ -45,7 +46,7 @@ const Project = () => {
             </Card.Description>
           </Card.Body>
           <Card.Footer justifyContent="flex-end">
-            <Link href="https://capdevpro.car.dilg.gov.ph" target="_blank">
+            <Link to="https://capdevpro.car.dilg.gov.ph" target="_blank">
               <Button variant="outline" size={"sm"}>
                 View Page
               </Button>

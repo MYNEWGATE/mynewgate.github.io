@@ -1,7 +1,7 @@
 import { Heading, Stack, Text } from "@chakra-ui/react";
 import { Box, Circle, HStack, LocaleProvider, Marquee } from "@chakra-ui/react";
-import { Link } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router";
 const About = () => {
   return (
     <Stack mb={"100px"}>
@@ -73,7 +73,7 @@ const About = () => {
         <HStack gap={2}>
           <FaLinkedin />
           <Link
-            href="https://www.linkedin.com/in/k-b-daluyen-83443a2a9"
+            to="https://www.linkedin.com/in/k-b-daluyen-83443a2a9"
             target="_blank"
           >
             Visit Linkedin
@@ -81,7 +81,7 @@ const About = () => {
         </HStack>
         <HStack gap={2}>
           <FaGithub />
-          <Link href="https://github.com/MYNEWGATE" target="_blank">
+          <Link to="https://github.com/MYNEWGATE" target="_blank">
             Visit GitHub
           </Link>
         </HStack>

@@ -1,4 +1,4 @@
-import { Avatar, Heading, HStack, Link, Stack, Text } from "@chakra-ui/react";
+import { Avatar, Heading, HStack, Stack, Text } from "@chakra-ui/react";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { IoMenu } from "react-icons/io5";
 import { Button, Drawer, Portal } from "@chakra-ui/react";
@@ -9,6 +9,7 @@ import { GrContact } from "react-icons/gr";
 import { TiFolderOpen } from "react-icons/ti";
 import Ilink from "./Ilink";
 import { routes } from "../../utils/pageRoutes";
+import { Link } from "react-router";
 
 const Header = () => {
   // STATE
@@ -22,8 +23,8 @@ const Header = () => {
   // EFFECT
   return (
     <HStack justifyContent={"space-between"} mt={3}>
-      <Link href={routes.base} cursor={"pointer"}>
-        <HStack>
+      <Link to={routes.base}>
+        <HStack cursor={"pointer"}>
           <Heading fontWeight={700}>K.D Burgos</Heading>
         </HStack>
       </Link>
@@ -91,28 +92,28 @@ const Header = () => {
                       </Stack>
                     </HStack>
                     <Stack gap={3}>
-                      <HStack gap={2}>
+                      <HStack gap={2} onClick={() => setOpen(false)}>
                         <Ilink
                           title="Home"
                           url={routes.base}
                           icon={<HiOutlineHome size={"24px"} />}
                         />
                       </HStack>
-                      <HStack gap={2}>
+                      <HStack gap={2} onClick={() => setOpen(false)}>
                         <Ilink
                           title="About Me"
                           url={routes.about}
                           icon={<GoPerson size={"24px"} />}
                         />
                       </HStack>
-                      <HStack gap={2}>
+                      <HStack gap={2} onClick={() => setOpen(false)}>
                         <Ilink
                           title="Contact"
                           url={routes.contact}
                           icon={<GrContact size={"24px"} />}
                         />
                       </HStack>
-                      <HStack gap={2}>
+                      <HStack gap={2} onClick={() => setOpen(false)}>
                         <Ilink
                           title="Projects"
                           url={routes.project}

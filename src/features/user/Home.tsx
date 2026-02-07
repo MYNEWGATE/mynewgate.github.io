@@ -211,42 +211,42 @@ const properties: Property[] = [
   {
     id: 1,
     title: "React Typescript",
-    image: "/src/assets/react.png",
+    image: "react.png",
   },
   {
     id: 2,
     title: "Chakra UI components",
-    image: "/src/assets/chakra-ui2348.logowik.webp",
+    image: "chakra-ui2348.logowik.webp",
   },
   {
     id: 3,
     title: "Laravel Framework",
-    image: "/src/assets/laravel8530.jpg",
+    image: "laravel8530.jpg",
   },
   {
     id: 4,
     title: "I use Node Modules",
-    image: "/src/assets/Node.js_logo.svg.png",
+    image: "Node.js_logo.svg.png",
   },
   {
     id: 5,
     title: "Python Language",
-    image: "/src/assets/Python-logo-notext.svg.png",
+    image: "Python-logo-notext.svg.png",
   },
   {
     id: 6,
     title: "C ++ Language",
-    image: "/src/assets/ISO_C++_Logo.svg.png",
+    image: "ISO_C++_Logo.svg.png",
   },
   {
     id: 7,
     title: "C sharp",
-    image: "/src/assets/Csharp_Logo.png",
+    image: "Csharp_Logo.png",
   },
   {
     id: 8,
     title: "Flutter for mobile development",
-    image: "/src/assets/flutter-logo-png_seeklogo-349577.png",
+    image: "flutter-logo-png_seeklogo-349577.png",
   },
 ];
 

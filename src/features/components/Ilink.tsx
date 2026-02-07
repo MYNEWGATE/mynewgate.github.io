@@ -1,6 +1,6 @@
-import { HStack, Link, Text } from "@chakra-ui/react";
+import { HStack, Text } from "@chakra-ui/react";
 import type { FC } from "react";
-import { useLocation } from "react-router";
+import { Link, useLocation } from "react-router";
 
 interface prop {
   url?: string;
@@ -15,13 +15,10 @@ const Ilink: FC<prop> = ({ url, icon, title, hover, color }) => {
 
   // HANDLE
   return (
-    <Link
-      href={url}
-      cursor={"pointer"}
+    <Link to={url || '/'}>
+      <HStack gap={3} cursor={"pointer"}
       _hover={{ color: hover }}
-      color={!(path.pathname == url) ? color : "rgb(247, 176, 70)"}
-    >
-      <HStack gap={3}>
+      color={!(path.pathname == url) ? color : "rgb(247, 176, 70)"}>
         {icon}
         <Text>{title}</Text>
       </HStack>
