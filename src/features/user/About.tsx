@@ -95,7 +95,7 @@ const items = [
   "Ian Krezelvent Agtarap (First job supervisor and teacher)",
   "Benedict Pascua",
   "Melvin Charayap",
-  "Chayan Lumage",
+  "Chayanne Lumage",
   "Vernie Ilasin",
   "Kharl Alog",
   "Gideon Pooten",

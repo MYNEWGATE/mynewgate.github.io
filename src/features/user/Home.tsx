@@ -145,7 +145,8 @@ const Home = () => {
         >
           <HStack justify="space-between">
             <Heading size={"lg"} fontWeight={700} maxW={"420px"}>
-              Thanks to Frameworks, language, components I use for every development I do.
+              Thanks to Frameworks, language, components I use for every
+              development I do.
             </Heading>
             <HStack>
               <Carousel.PrevTrigger asChild>
@@ -186,7 +187,7 @@ const PropertyCard = ({ data }: PropertyCardProps) => (
         rounded="l2"
         w="full"
         h="200px"
-        objectFit={{ base: "contain", lg: "cover" }}
+        objectFit={"contain"}
         draggable={false}
       />
     </Box>
@@ -205,48 +206,63 @@ interface Property {
   id: number;
   title: string;
   image: string;
+  object: string;
 }
 
 const properties: Property[] = [
   {
     id: 1,
-    title: "React Typescript",
-    image: "react.png",
+    title: "Express TS",
+    image: "express-ts-api-template.png",
+    object: "",
   },
   {
     id: 2,
-    title: "Chakra UI components",
-    image: "chakra-ui2348.logowik.webp",
+    title: "React Typescript",
+    image: "react.png",
+    object: "",
   },
   {
     id: 3,
-    title: "Laravel Framework",
-    image: "laravel8530.jpg",
+    title: "Chakra UI components",
+    image: "chakra.png",
+    object: "",
   },
   {
     id: 4,
-    title: "I use Node Modules",
-    image: "Node.js_logo.svg.png",
+    title: "Laravel Framework",
+    image: "2560px-Logo.min_.svg_-1024x297.png",
+    object: "",
   },
   {
     id: 5,
-    title: "Python Language",
-    image: "Python-logo-notext.svg.png",
+    title: "Flutter for mobile development",
+    image: "flutter-logo-png_seeklogo-349577.png",
+    object: "",
   },
   {
     id: 6,
-    title: "C ++ Language",
-    image: "ISO_C++_Logo.svg.png",
+    title: "I use Node Modules",
+    image: "Node.js_logo.svg.png",
+    object: "",
   },
   {
     id: 7,
-    title: "C sharp",
-    image: "Csharp_Logo.png",
+    title: "Python Language",
+    image: "Python-logo-notext.svg.png",
+    object: "",
   },
   {
     id: 8,
-    title: "Flutter for mobile development",
-    image: "flutter-logo-png_seeklogo-349577.png",
+    title: "C ++ Language",
+    image: "ISO_C++_Logo.svg.png",
+    object: "",
+  },
+  {
+    id: 9,
+    title: "C sharp",
+    image: "Csharp_Logo.png",
+    object: "",
   },
 ];
 
